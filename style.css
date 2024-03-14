@@ -29,13 +29,24 @@ p {
 }
 
 button {
-  background-color: #3882f6;
-  color: #f9faf8;
   font-weight: bolder;
   padding: 8px 14px;
-  border-radius: 12px;
   border: 1px;
   width: fit-content;
+}
+
+.rounded-corner {
+  border-radius: 12px;
+}
+
+.blue-background {
+  background-color: #3882f6;
+  color: #f9faf8;
+}
+
+.black-background {
+  color: #f9faf8;
+  background-color: #1f2937;
 }
 
 .img-container {
@@ -50,15 +61,12 @@ button {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #f9faf8;
-  background-color: #1f2937;
 }
 
 .neck {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1f2937;
   padding: 100px;
   gap: 24px;
 }
@@ -74,7 +82,6 @@ button {
   font-size: 48px;
   margin: 0;
   font-weight: bolder;
-  color: #f9faf8;
 }
 
 .info {
@@ -122,21 +129,22 @@ button {
   justify-content: center;
   align-items: center;
   padding: 100px 200px;
+  color: #1f2937;
 }
 
 .quote {
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
-  color: #1f2937;
   text-align: left;
+  color: inherit;
 }
 
 .author {
   font-size: 24px;
   font-weight: bold;
-  color: #1f2937;
   margin-left: auto;
+  color: inherit;
 }
 
 .container {
@@ -146,14 +154,12 @@ button {
   padding: 100px 200px;
 }
 
-.container.blue {
-  background-color: #3882f6;
-  border-radius: 12px;
+.container.blue-background {
   padding: 50px 100px;
   flex: 1;
 }
 
-.container.blue .text-container {
+#blue-text {
   width: fit-content;
 }
 
@@ -171,8 +177,6 @@ button {
 }
 
 .footer {
-  background-color: #1f2937;
-  color: #f9faf8;
   margin-top: auto;
   padding: 50px;
 }
