@@ -23,6 +23,7 @@ a {
 p {
   font-size: 18px;
   color: #e2e4eb;
+  margin: 0;
 }
 
 button {
@@ -132,4 +133,42 @@ button {
   font-weight: bold;
   color: #1f2937;
   margin-left: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 200px;
+}
+
+.container.blue {
+  background-color: #3882f6;
+  border-radius: 12px;
+  padding: 50px 100px;
+  flex: 1;
+}
+
+.container.blue .text-container {
+  width: fit-content;
+}
+
+.white-border {
+  border-color: #f9faf8;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: auto;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  margin-top: auto;
+  padding: 50px;
 }
