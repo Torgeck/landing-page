@@ -11,11 +11,13 @@ ul {
 }
 
 img {
-  width: 500px;
+  max-width: 100%;
+  border-radius: inherit;
 }
 
 a {
   text-decoration: none;
+  font-weight: normal;
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -29,11 +31,15 @@ p {
 button {
   background-color: #3882f6;
   color: #f9faf8;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 8px 14px;
   border-radius: 12px;
   border: 1px;
   width: fit-content;
+}
+
+.img-container {
+  width: 500px;
 }
 
 .header {
@@ -74,9 +80,8 @@ button {
 .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
+  text-align: center;
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
@@ -84,16 +89,14 @@ button {
 }
 .item-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-evenly;
 }
 
 .item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 150px;
 }
 
 .blue-border {
@@ -124,6 +127,7 @@ button {
 .quote {
   font-size: 36px;
   font-style: italic;
+  font-weight: lighter;
   color: #1f2937;
   text-align: left;
 }
